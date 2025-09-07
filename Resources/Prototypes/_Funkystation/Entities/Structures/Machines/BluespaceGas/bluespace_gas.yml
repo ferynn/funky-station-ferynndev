@@ -12,6 +12,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Transform
     noRot: false
     anchored: true
@@ -48,6 +49,8 @@
     interfaces:
       enum.BluespaceSenderUiKey.Key:
         type: BluespaceSenderBoundUserInterface
+      enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
   - type: AtmosDevice
   - type: PipeColorVisuals
   - type: Rotatable
@@ -67,7 +70,10 @@
   - type: WiresVisuals
   - type: AccessReader
     access: [["Atmospherics"]]
-
+  - type: Wires
+    boardName: wires-board-name-bluespace-gas
+    layoutId: GenericEngineering
+      
 - type: entity
   id: BaseBluespaceGasUtilizer
   abstract: true
@@ -89,6 +95,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Transform
     anchored: true
     noRot: false
@@ -144,6 +151,8 @@
     interfaces:
       enum.BluespaceVendorUiKey.Key:
         type: BluespaceVendorBoundUserInterface
+      enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
   - type: Appearance
   - type: WiresPanel
   - type: WiresVisuals
@@ -168,3 +177,6 @@
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: ApcPowerReceiver
+  - type: Wires
+    boardName: wires-board-name-bluespace-gas
+    layoutId: GenericEngineering

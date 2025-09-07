@@ -43,6 +43,7 @@
   id: CoreSubstation
   components:
   # Core power behavior
+  - type: StationAiWhitelist
   - type: Battery
   - type: ExaminableBattery
   - type: NodeContainer
@@ -75,6 +76,8 @@
     interfaces:
       enum.BatteryUiKey.Key:
         type: BatteryBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: ActivatableUI
     key: enum.BatteryUiKey.Key
 
@@ -102,6 +105,11 @@
     volume: -5
     sound:
       path: /Audio/Ambience/Objects/buzzing.ogg
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-substation
+    layoutId: SubStation
 
 # Base substation
 - type: entity
@@ -169,7 +177,6 @@
     maxIntensity: 100
     intensitySlope: 2
     totalIntensity: 200
-  - type: WiresPanel
   - type: Machine
     board: SubstationMachineCircuitboard
   - type: AmbientSound

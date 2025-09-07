@@ -43,6 +43,7 @@
   placement:
     mode: SnapgridCenter
   components:
+    - type: StationAiWhitelist
     - type: AmbientSound
       volume: -7
       range: 3
@@ -134,6 +135,9 @@
       - PowerStorage
       - VoltageNetworks
       - Power
+    - type: Wires
+      boardName: wires-board-name-smes
+      layoutId: SubStation
 
     # Interface
     - type: BatteryInterface
@@ -145,6 +149,8 @@
       interfaces:
         enum.BatteryUiKey.Key:
           type: BatteryBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
     - type: ActivatableUI
       key: enum.BatteryUiKey.Key
 

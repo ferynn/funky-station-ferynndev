@@ -59,6 +59,10 @@
     guides:
     - Bartender
     - Drinks
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-soda
+    layoutId: GenericServiceAccess
 
 - type: entity
   parent: SodaDispenser

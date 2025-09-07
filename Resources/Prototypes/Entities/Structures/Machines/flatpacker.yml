@@ -14,6 +14,7 @@
   name: Flatpacker 1001
   description: An industrial machine used for expediting machine construction across the station.
   components:
+  - type: StationAiWhitelist
   - type: Sprite
     sprite: Structures/Machines/flatpacker.rsi
     snapCardinals: true
@@ -70,6 +71,8 @@
     interfaces:
       enum.FlatpackCreatorUIKey.Key:
         type: FlatpackCreatorBoundUserInterface
+      enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
   - type: ItemSlots
     slots:
       board_slot:
@@ -90,6 +93,9 @@
     - board_slot
   - type: StaticPrice
     price: 2000
+  - type: Wires
+    boardName: wires-board-name-flatpacker
+    layoutId: GenericScience
 
 - type: entity
   id: FlatpackerNoBoardEffect

@@ -60,6 +60,10 @@
     - Drinks
   - type: StealTarget
     stealGroup: BoozeDispenser
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-booze
+    layoutId: GenericServiceAccess
 
 - type: entity
   id: BoozeDispenserEmpty

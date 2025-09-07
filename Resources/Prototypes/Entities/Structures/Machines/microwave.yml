@@ -61,6 +61,7 @@
     canMicrowaveIdsSafely: false # Goobstation
     explosionChance: .25 # Goobstation
   - type: Appearance
+  - type: StationAiWhitelist
   - type: GenericVisualizer
     visuals:
       enum.MicrowaveVisualState.Bloody:
@@ -100,6 +101,8 @@
     interfaces:
       enum.MicrowaveUiKey.Key:
         type: MicrowaveBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -160,6 +163,12 @@
     guides:
     - Chef
     - FoodRecipes
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-microwave
+    layoutId: GenericService
+
 
 - type: entity
   id: SyndicateMicrowave

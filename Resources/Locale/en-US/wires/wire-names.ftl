@@ -69,6 +69,12 @@ wires-board-name-holopad = Holopad
 wires-board-name-barsign = Bar Sign
 wires-board-name-weapon-energy-turret = Sentry turret
 wires-board-name-turret-controls = Sentry turret control panel
+wires-board-name-emitter = Emitter
+wires-board-name-ame = AntimatterEngine
+wires-board-name-rad-collector = RadiationCollector
+wires-board-name-bluespace-gas = BlueSpaceGas
+wires-board-name-lathe = Lathe
+wires-board-name-microwave = Microwave
 
 # names that get displayed in the wire hacking hud & admin logs.
 

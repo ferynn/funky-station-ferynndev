@@ -7,11 +7,12 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
 - type: entity
-  parent: BaseComputer
+  parent: BaseComputerAiAccess
   id: ComputerTechnologyDiskTerminal
   name: tech disk terminal
   description: A terminal used to print out technology disks.
   components:
+  - type: StationAiWhitelist
   - type: Sprite
     noRot: true
     sprite: Structures/Machines/tech_disk_printer.rsi

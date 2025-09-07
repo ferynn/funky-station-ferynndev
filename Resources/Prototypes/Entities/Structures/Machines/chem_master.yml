@@ -55,6 +55,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Sprite
     sprite: Structures/Machines/mixer.rsi
     snapCardinals: true
@@ -108,6 +109,8 @@
     interfaces:
       enum.ChemMasterUiKey.Key:
         type: ChemMasterBoundUserInterface
+      enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
   - type: ApcPowerReceiver
     powerLoad: 250
   - type: Appearance
@@ -152,3 +155,7 @@
     guides:
     - Chemicals
     - Chemist
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-chemmaster
+    layoutId: GenericMedical

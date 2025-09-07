@@ -193,7 +193,7 @@
     - DeviceMonitoringAndControl
 
 - type: entity
-  parent: BaseComputer
+  parent: BaseComputerAiAccess
   id: ComputerEmergencyShuttle
   name: emergency shuttle console
   description: Handles authorization to early launch the shuttle.
@@ -228,7 +228,7 @@
     speechSounds: Pai
 
 - type: entity
-  parent: BaseComputer
+  parent: BaseComputerAiAccess
   id: BaseComputerShuttle
   name: shuttle console
   description: Used to pilot a shuttle.
@@ -417,7 +417,7 @@
     board: ComputerIFFCircuitboard
 
 - type: entity
-  parent: ComputerIFF
+  parent: BaseComputerAiAccess
   id: ComputerIFFSyndicate
   name: IFF computer
   suffix: Syndicate

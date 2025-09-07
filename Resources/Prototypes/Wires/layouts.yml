@@ -156,6 +156,7 @@
   - !type:ParticleAcceleratorLimiterWireAction
   - !type:ParticleAcceleratorPowerWireAction
   - !type:ParticleAcceleratorStrengthWireAction
+  - !type:AiInteractWireAction
 
 - type: wireLayout
   id: Docking
@@ -263,3 +264,65 @@
   - !type:PowerWireAction
   - !type:AccessWireAction
   - !type:AiInteractWireAction
+
+- type: wireLayout
+  id: SubStation
+  dummyWires: 3
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+  - !type:AiInteractWireAction
+ 
+- type: wireLayout
+  id: GenericScience
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+  - !type:AiInteractWireAction
+  
+- type: wireLayout
+  id: GenericEngineering
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AiInteractWireAction
+
+- type: wireLayout
+  id: GenericLathe
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AiInteractWireAction
+  
+- type: wireLayout
+  id: GenericMedical
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AiInteractWireAction
+  
+- type: wireLayout
+  id: GenericService
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AiInteractWireAction
+  
+- type: wireLayout
+  id: GenericServiceAccess
+  dummyWires: 2
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AiInteractWireAction
+  - !type:AccessWireAction

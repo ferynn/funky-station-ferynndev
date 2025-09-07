@@ -49,6 +49,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
@@ -111,6 +112,9 @@
     interfaces:
       enum.AmeControllerUiKey.Key:
         type: AmeControllerBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -152,6 +156,11 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: ame
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-ame
+    layoutId: GenericEngineering
 
 - type: entity
   categories: [ HideSpawnMenu ]

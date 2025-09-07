@@ -106,6 +106,7 @@
   name: artifact crusher
   description: Best not to let your fingers get stuck...
   components:
+  - type: StationAiWhitelist
   - type: ArtifactCrusher
     crushingWhitelist:
       components:
@@ -115,7 +116,6 @@
         Blunt: 10
   - type: Machine
     board: ArtifactCrusherMachineCircuitboard
-  - type: WiresPanel
   - type: Sprite
     sprite: Structures/Machines/artifact_crusher.rsi
     offset: 0,0.5
@@ -177,3 +177,12 @@
       machine_parts: !type:Container
       entity_storage: !type:Container
       output_container: !type:Container
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-crusher
+    layoutId: GenericScience
+  - type: UserInterface
+    interfaces:
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface

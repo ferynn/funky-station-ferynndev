@@ -140,6 +140,7 @@
   name: A.P.E.
   description: An Anomalous Particle Emitter, capable of shooting out unstable particles which can interface with anomalies.
   components:
+  - type: StationAiWhitelist
   - type: Sprite
     noRot: true
     sprite: Structures/Machines/Anomaly/ape.rsi
@@ -215,6 +216,9 @@
   - type: Appearance
   - type: WiresPanel
   - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-ape
+    layoutId: GenericScience
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
@@ -237,6 +241,10 @@
       - SetParticleEpsilon
       - SetParticleZeta
       - SetParticleSigma
+  - type: UserInterface
+    interfaces:
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
 
 - type: entity
   id: MachineAnomalyGenerator

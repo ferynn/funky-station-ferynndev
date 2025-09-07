@@ -45,6 +45,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Transform
     anchored: true
     noRot: true
@@ -72,6 +73,8 @@
     interfaces:
       enum.ReagentDispenserUiKey.Key:
         type: ReagentDispenserBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: Anchorable
   - type: Pullable
   - type: Damageable

@@ -33,6 +33,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: StationAiWhitelist
   - type: Clickable
   - type: InteractionOutline
   - type: Physics
@@ -110,6 +111,15 @@
           - GasTank
   - type: UseDelay
     delay: 1
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-rad-collector
+    layoutId: GenericEngineering
+  - type: UserInterface
+    interfaces:
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
 
 - type: entity
   id: RadiationCollectorNoTank
