@@ -48,6 +48,12 @@
 		},
 		{
 			"name": "door_overcharge_off"
+		},
+		{
+			"name": "power_monitor"
+		},
+		{
+			"name": "atmos_alert"
 		}
 	]
 }

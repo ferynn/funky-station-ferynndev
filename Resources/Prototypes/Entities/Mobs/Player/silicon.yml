@@ -116,6 +116,10 @@
         type: CommunicationsConsoleBoundUserInterface
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
+      enum.AtmosAlertsComputerUiKey.Key:
+        type: AtmosAlertsComputerBoundUserInterface
+      enum.PowerMonitoringConsoleUiKey.Key:
+        type: PowerMonitoringConsoleBoundUserInterface
       enum.MalfAiBorgsUiKey.Key:
         type: MalfAiBorgsBoundUserInterface
   - type: IntrinsicUI
@@ -128,8 +132,15 @@
         toggleAction: ActionAGhostShowStationRecords
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
+      enum.AtmosAlertsComputerUiKey.Key:
+        toggleAction: ActionAIAtmosMonitor
+      enum.PowerMonitoringConsoleUiKey.Key:
+        toggleAction: ActionAIPowerMonitor
   - type: CrewMonitoringConsole
   - type: GeneralStationRecordConsole
+  - type: PowerMonitoringConsole
+  - type: PowerMonitoringCableNetworks
+  - type: AtmosAlertsComputer
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: CrewMonitor

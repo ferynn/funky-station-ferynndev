@@ -45,7 +45,6 @@
             layer:
             - GhostImpassable
 
-
 - type: entity
   id: ActionAIViewLaws
   name: View Laws
@@ -61,3 +60,34 @@
       state: state_laws
     event: !type:ToggleLawsScreenEvent
     useDelay: 0.5
+
+- type: entity
+  id: ActionAIAtmosMonitor
+  name: Atmospheric Monitoring
+  description: View an atmospherics monitoring interface.
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    priority: -10
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: atmos_alert
+    event: !type:ToggleIntrinsicUIEvent { key: enum.AtmosAlertsComputerUiKey.Key }
+    
+- type: entity
+  id: ActionAIPowerMonitor
+  name: Power Monitoring
+  description: View a power monitoring interface.
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    priority: -11
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: power_monitor
+    event: !type:ToggleIntrinsicUIEvent { key: enum.PowerMonitoringConsoleUiKey.Key }
+  
