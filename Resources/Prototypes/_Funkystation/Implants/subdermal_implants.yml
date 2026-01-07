@@ -20,3 +20,13 @@
       tags:
       - ChangelingInfectionImplant
       - HideContextMenu
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: VIPTrackerCentcommImplant
+  name: centcomm VIP tracker implant
+  description: This brain implant allows the user to signal for emergency extraction. The implant monitors vitals, and will self activate under terminal conditions.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Rattle
+    radioChannel: CentCom

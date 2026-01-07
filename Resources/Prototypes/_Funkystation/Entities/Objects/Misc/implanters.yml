@@ -81,3 +81,11 @@
   components:
   - type: Implanter
     implant: RevolutionaryLieutenantImplant
+
+- type: entity
+  parent: BaseImplantOnlyImplanterCentcomm
+  id: VIPTrackerCentcomm
+  name: centcomm vip tracker implanter
+  components:
+  - type: Implanter
+    implant: VIPTrackerCentcommImplant
