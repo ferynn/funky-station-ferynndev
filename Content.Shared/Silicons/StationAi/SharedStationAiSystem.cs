@@ -577,6 +577,19 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
         return _blocker.CanComplexInteract(entity.Owner);
     }
+
+    public struct AIWarp
+    {
+        public AIWarp(NetEntity entity, string displayName, bool isWarpPoint)
+        {
+            Entity = entity;
+            DisplayName = displayName;
+            IsWarpPoint = isWarpPoint;
+        }
+        public NetEntity Entity { get; }
+        public string DisplayName { get; }
+        public bool IsWarpPoint { get;  }
+    }
 }
 
 public sealed partial class JumpToCoreEvent : InstantActionEvent
